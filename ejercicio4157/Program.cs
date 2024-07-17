@@ -12,30 +12,30 @@ namespace ejercicio4157
         static void Main(string[] args)
         {
             Console.WriteLine("Ingrese un dia: ");
-            string dia = Console.ReadLine();
+            string dia= Console.ReadLine().ToLower();
 
             string mensaje = "";
             switch (dia)
                 {
-                case "lunes": mensaje = "tiene 5 letras... "; 
+                case "lunes": mensaje = " tiene 5 letras... "; 
                     break;
-                case "martes": mensaje = "tiene 6 letras... "; 
+                case "martes": mensaje = " tiene 6 letras... "; 
                     break;
-                case "miercoles": mensaje = "tiene 8 letras... "; 
+                case "miercoles": mensaje = " tiene 8 letras... "; 
                     break;
-                case "jueves": mensaje = "tiene 6 letras... "; 
+                case "jueves": mensaje = " tiene 6 letras... "; 
                     break;
-                case "viernes": mensaje = "tiene 7 letras... ";
+                case "viernes": mensaje = " tiene 7 letras... ";
                     break;
-                case "sabado": mensaje = "tiene 6 letras... ";
+                case "sabado": mensaje = " tiene 6 letras... ";
                     break;
-                case "domingo": mensaje = "tiene 7 letras... ";
+                case "domingo": mensaje = " tiene 7 letras... ";
                     break;
-                default:  mensaje = "error no es un dia... "; 
+                default:  mensaje = " no es un dia... "; 
                     break;
             }
-            Console.WriteLine(mensaje + dia);
-            Thread.Sleep(1000);
+            Console.WriteLine(dia + mensaje);
+            Thread.Sleep(2000);//pausa el programa por 2 segundo (2000 milisegundos)
             Console.WriteLine("pulse para continuar...");
             Console.ReadKey();
         }
