@@ -32,11 +32,11 @@ namespace ejercicio3157
             {
                 Console.WriteLine("sobrepeso");
             }
-            else if (imc >=30 && imc < 35)
+            else if (imc >= 30 && imc < 35)
             {
                 Console.WriteLine("obesidad tipo 1");
             }
-            else if (imc >=35 && imc <40)
+            else if (imc >= 35 && imc < 40)
             {
                 Console.WriteLine("obesidad tipo 2");
             }

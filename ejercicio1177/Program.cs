@@ -13,10 +13,20 @@ namespace ejercicio1177
         {
             Console.WriteLine("Ingrese un numero a imprimir: ");
             int num = int.Parse(Console.ReadLine());
+            Console.WriteLine("\n en orden ascendente\n");
             for (int i = 0; i <= num; i++)
             {
-                Console.WriteLine(i);
+             Console.WriteLine(i);
+                if (i == 50) 
+                { break; 
+                    }
             }
+            Console.WriteLine("\nen orden descendente\n");
+            for (int i = 50; i >= 0; i--)
+            {
+             Console.WriteLine(i);
+            }
+            
             Thread.Sleep(1000);
             Console.WriteLine("Pulse una tecla para finalizar...");
             Console.ReadKey();
